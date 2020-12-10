@@ -8,14 +8,20 @@ and open the template in the editor.
     <head>
         <meta charset="UTF-8">
         <title></title>
+    <h1><a href="new_user.php">New_User</a></h1>
     </head>
     <body>
+        <h2>Login</h2>
         <?php include 'connection.php';?>
-       <form>
-  <label for="fname">First name:</label><br>
-  <input type="text" id="fname" name="fname"><br>
-  <label for="lname">Last name:</label><br>
-  <input type="text" id="lname" name="lname">
+       <form action="check_user.php" method="post">
+  <label for="user">User:</label><br>
+  <input type="text" id="user" name="user"><br>
+  <label for="pass">Password:</label><br>
+  <input type="text" id="pass" name="pass">
+  <br>
+  <br>
+  <input type="submit" value="Submit">
+
 </form>
         
     </body>
